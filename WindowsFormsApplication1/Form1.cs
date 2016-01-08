@@ -30,32 +30,6 @@ namespace WindowsFormsApplication1
 
         private DataParameter _inputparameter;
 
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void folderBrowserDialog1_HelpRequest(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (path != null)
@@ -69,12 +43,7 @@ namespace WindowsFormsApplication1
                 button1.Enabled = false;
                 button2.Enabled = true;
                 button5.Enabled = false;
-            }
-
-            else
-            {
-            }
-
+            }      
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -83,26 +52,6 @@ namespace WindowsFormsApplication1
             button1.Enabled = true;
             button2.Enabled = false;
             button5.Enabled = true;
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void folderBrowserDialog1_HelpRequest_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void locationToolStripMenuItem_Click(object sender, EventArgs e)
@@ -116,11 +65,6 @@ namespace WindowsFormsApplication1
                 Properties.Settings.Default.path = path;
                 Properties.Settings.Default.Save();
             }
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -137,28 +81,12 @@ namespace WindowsFormsApplication1
             textBox2.Visible = false;
             button3.Visible = false;
             button4.Visible = false;
-
-
+     
             label4.Visible = true;
             label3.Visible = true;
             button1.Visible = true;
             button2.Visible = true;
             button5.Enabled = true;
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -177,11 +105,6 @@ namespace WindowsFormsApplication1
             button4.Visible = true;
         }
 
-        private void textBox2_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox2_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             DialogResult result = folderBrowserDialog1.ShowDialog();
@@ -195,14 +118,8 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void label3_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void label3_TextChanged(object sender, EventArgs e)
         {
-            int formwidth = 310;
             while ((label3.Size.Width < System.Windows.Forms.TextRenderer.MeasureText(label3.Text, new Font(label3.Font.FontFamily, label3.Font.Size, label3.Font.Style)).Width) && (label3.Size.Width != 300))
             {
                 int width = System.Windows.Forms.TextRenderer.MeasureText(label3.Text, new Font(label3.Font.FontFamily, label3.Font.Size, label3.Font.Style)).Width;
@@ -236,20 +153,10 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void label4_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             int delay = ((DataParameter)e.Argument).Delay;
             e.Result = LastFMApiClient.GetNowPlaying(Properties.Settings.Default.username);                
-        }
-
-        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-
         }
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)

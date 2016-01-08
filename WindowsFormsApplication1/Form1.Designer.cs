@@ -74,7 +74,6 @@
             // 
             // folderBrowserDialog1
             // 
-            this.folderBrowserDialog1.HelpRequest += new System.EventHandler(this.folderBrowserDialog1_HelpRequest_1);
             // 
             // fileToolStripMenuItem
             // 
@@ -95,7 +94,6 @@
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.settingsToolStripMenuItem.Text = "Settings";
-            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // usernameToolStripMenuItem
             // 
@@ -110,7 +108,6 @@
             this.textBox1.Size = new System.Drawing.Size(177, 20);
             this.textBox1.TabIndex = 12;
             this.textBox1.Visible = false;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -122,7 +119,6 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "LastFM Username";
             this.label2.Visible = false;
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // button3
             // 
@@ -177,7 +173,6 @@
             this.textBox2.Size = new System.Drawing.Size(177, 20);
             this.textBox2.TabIndex = 19;
             this.textBox2.Visible = false;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged_1);
             this.textBox2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.textBox2_MouseDoubleClick);
             // 
             // pictureBox1
@@ -200,7 +195,6 @@
             this.label3.Text = "Not Listening";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label3.TextChanged += new System.EventHandler(this.label3_TextChanged);
-            this.label3.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // label4
             // 
@@ -211,13 +205,11 @@
             this.label4.Size = new System.Drawing.Size(148, 29);
             this.label4.TabIndex = 22;
             this.label4.Text = "Current Track";
-            this.label4.Click += new System.EventHandler(this.label4_Click_1);
             // 
             // backgroundWorker1
             // 
             this.backgroundWorker1.WorkerSupportsCancellation = true;
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-            this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
             // Form1
@@ -244,7 +236,6 @@
             this.MinimumSize = new System.Drawing.Size(320, 240);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

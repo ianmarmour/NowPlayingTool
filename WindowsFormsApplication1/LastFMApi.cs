@@ -56,14 +56,11 @@ namespace WindowsFormsApplication1
                 }
             }
 
-
-
-
             else
             {
                 return "No valid path selected.";
             }
         }
             
-        }
     }
+}
